@@ -1,0 +1,75 @@
+body {
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: slateblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+
+    color: white;
+    letter-spacing: 2px;
+}
+
+.year {
+
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.date {
+    color: white;
+    background-color: blueviolet;
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.date span {
+
+    margin: 10px 50px;
+    position: relative;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.date ::before {
+
+    position: absolute;
+    bottom: 0;
+}
+
+.date #days::before {
+
+    content: "Days";
+
+}
+
+.date #hours::before {
+
+    content: "Hours";
+}
+
+.date #minutes::before {
+
+    content: "Minutes";
+}
+
+.date #seconds::before {
+
+    content: "Seconds";
+}
